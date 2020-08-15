@@ -17,6 +17,23 @@ function init(){
     camera.position.z = 5;
 
 
+    // create an AudioListener and add it to the camera
+	var listener = new THREE.AudioListener();
+	camera.add( listener );
+
+	// create a global audio source
+	var sound = new THREE.Audio( listener );
+
+	// load a sound and set it as the Audio object's buffer
+	var audioLoader = new THREE.AudioLoader();
+	audioLoader.load( './04. Clair de Lune.ogg', function( buffer ) {
+		sound.setBuffer( buffer );
+		sound.setLoop(false);
+		sound.setVolume(0.5);
+		sound.play();
+	});
+
+    
 
     renderer = new THREE.WebGLRenderer ( { alpha: true});
     renderer.setSize ( window.innerWidth, window.innerHeight);
