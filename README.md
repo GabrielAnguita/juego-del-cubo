@@ -7,3 +7,5 @@ a quien agradezco enormemente.
 Se recomienda correr desde un servidor como "python3 -m http.server" para no tener problemas con el CORS y que la música se escuche
 
 
+
+cualquier problema de copyright haganmelo saber y enseguida eliminaré lo que tenga que elimiar, me quejaré un poquito también porque viva compartir
